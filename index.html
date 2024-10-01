@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ramesh Car Driving School</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        header {
+            background-color: #0078D4; /* Microsoft blue */
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+
+        nav {
+            text-align: center;
+            margin-top: 10px;
+            background-color: #f4f4f4;
+        }
+
+        nav a {
+            color: #333;
+            text-decoration: none;
+            margin: 10px;
+            font-size: 1.2em;
+        }
+
+        nav a:hover {
+            color: #0078D4;
+        }
+
+        marquee {
+            background-color: #0078D4;
+            color: white;
+            font-size: 1.2em;
+            padding: 10px;
+            font-weight: bold;
+        }
+
+        .banner {
+            background-color: #A2AAAD; /* Apple grey */
+            text-align: center;
+            padding: 50px 20px;
+        }
+
+        .banner h2 {
+            font-size: 2em;
+            color: white;
+        }
+
+        .content {
+            padding: 20px;
+            text-align: center;
+        }
+
+        .services, .contact {
+            display: none;
+        }
+
+        .service-item {
+            display: inline-block;
+            width: 30%;
+            margin: 10px;
+            vertical-align: top;
+        }
+
+        .service-item img {
+            width: 100%;
+            height: auto;
+        }
+.con{
+width:200px;
+height:200px;
+}
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        footer p {
+            margin: 5px 0;
+        }
+
+        button {
+            background-color: #0078D4;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            margin: 10px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #005a9e;
+        }
+    </style>
+</head>
+<body>
+
+    <marquee>Welcome to Ramesh Car Driving School!</marquee>
+
+    <header>
+        <h1>Ramesh Car Driving School</h1>
+        <h2>Timings: 6:00 AM - 6:00 PM | Charges: ₹200/day</h2>
+    </header>
+
+    <nav>
+        <a href="javascript:void(0)" onclick="showSection('home')">Home</a>
+        <a href="javascript:void(0)" onclick="showSection('services')">Services</a>
+        <a href="javascript:void(0)" onclick="showSection('contact')">Contact</a>
+    </nav>
+
+    <div class="banner">
+        <h2>Drive with Confidence!</h2>
+        <p>Join our expert-led driving lessons and master the art of safe driving.</p>
+    </div>
+
+    <div id="home" class="content">
+        <h2>Welcome to Ramesh Car Driving School</h2>
+        <p>At Ramesh Car Driving School, we offer top-quality driving lessons to help you become a confident and safe driver. Whether you're a beginner or want to improve your driving skills, we have the right package for you.</p>
+        <p>Our professional instructors provide hands-on training and personalized lessons to ensure you get the best learning experience.</p>
+    </div>
+
+    <div id="services" class="services">
+        <h2>Our Services</h2>
+        <div class="service-item">
+            <img src="https://www.wikihow.com/images/thumb/6/64/Drive-in-India-Step-1.jpg/v4-460px-Drive-in-India-Step-1.jpg.webp" alt="Beginner Lessons">
+            <h3>Beginner Lessons</h3>
+            <p>Learn the basics of driving, including vehicle control, parking, and safety tips.</p>
+        </div>
+        <div class="service-item">
+            <img src="https://media.istockphoto.com/id/1390714417/photo/teenager-girl-having-driving-lesson-with-female-instructor.webp?a=1&b=1&s=612x612&w=0&k=20&c=OUgPNIc3sRqjKEGgSNNqzPouvexRA1-YfXvsOcsfglE=" alt="Intermediate Lessons">
+            <h3>Intermediate Lessons</h3>
+            <p>Improve your driving skills with advanced techniques and defensive driving lessons.</p>
+        </div>
+        <div class="service-item">
+            <img src="https://5.imimg.com/data5/ANDROID/Default/2024/1/374212597/RN/XF/IC/151102911/product-jpeg.jpg" alt="Advanced Training">
+            <h3>Advanced Training</h3>
+            <p>Master parallel parking, highway driving, and other complex road maneuvers.</p>
+        </div>
+    </div>
+
+    <div id="contact" class="contact">
+        <h2>Contact Us</h2>
+<center><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbP2UhpwfttaGSWNZL2MhNKinYF7WV3lorrQ8Xr_uTqmCTMgvgTTnkH4oGh5RZsvOTrMk&usqp=CAU"  classs="con"></center>
+        <p>If you're interested in learning to drive with us, please reach out!</p>
+        <p>Email:chikkaramesh78@gmail.com</p>
+        <p>Phone: +91 9391692862</p>
+        <p>Address: Bhimavaram, bhimavaram City</p>
+    </div>
+
+    <footer>
+        <p>Phone: 9391692862 | Timings: 6:00 AM - 6:00 PM | Charges: ₹200/day</p>
+        <p>&copy; 2024 Ramesh Car Driving School. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function showSection(section) {
+            // Hide all sections
+            document.getElementById('home').style.display = 'none';
+            document.getElementById('services').style.display = 'none';
+            document.getElementById('contact').style.display = 'none';
+
+            // Show the clicked section
+            document.getElementById(section).style.display = 'block';
+        }
+
+        // Display home section by default
+        showSection('home');
+    </script>
+
+</body>
+</html>
